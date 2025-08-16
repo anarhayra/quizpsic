@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz de Psicologia</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Quiz de psicologia com ícones, pontuação e resultado baseado na performance.">
+</head>
+<body>
+  <div class="backdrop"></div>
+
+  <header class="topo">
+    <h1><span class="logo">🧠</span> Quiz de Psicologia</h1>
+    <div class="status">
+      <div class="progresso"><div class="barra"></div></div>
+      <span class="placar">Pontuação: <strong>0</strong></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" id="area-pergunta">
+      <h2 id="titulo-pergunta"></h2>
+      <ul class="alternativas"></ul>
+      <div class="controles">
+        <button id="botao-proxima" class="btn secundario" disabled>Próxima ▷</button>
+        <button id="botao-reiniciar" class="btn fantasma" hidden>Reiniciar ↻</button>
+      </div>
+      <p class="dica" id="feedback"></p>
+    </section>
+
+    <section class="card resultado" id="resultado" hidden>
+      <h2>Resultado Final</h2>
+      <p class="resumo"></p>
+      <ul class="ranking">
+        <li>🌸 0–4 pontos: Iniciante em psicologia, continue explorando!</li>
+        <li>🌷 5–7 pontos: Boa base, já entende conceitos importantes!</li>
+        <li>🌺 8–9 pontos: Excelente, quase uma especialista!</li>
+        <li>👑 10 pontos: Brilhante! Uma verdadeira mente psicológica!</li>
+      </ul>
+      <button id="botao-jogar-novamente" class="btn primario">Jogar novamente</button>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <small>Feito com carinho 🌸 — Quiz interativo de Psicologia.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
